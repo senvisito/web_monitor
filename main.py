@@ -13,8 +13,7 @@ async def main():
             elif not monitor.check_service_response(URL):
                 mensaje = "El puerto responde pero el servicio web no está activo."
             else:
-                mensaje = "El servicio web está activo y respondiendo."
-            # Llamada a función para enviar mensaje a Telegram (Asumiendo que esta función existe en monitor.py)
+                mensaje = "El servicio web está activo y respondiendo. Puedes estar tranquilo Vicent."
             await monitor.enviar_mensaje_telegram(TOKEN_TELEGRAM_BOT, id_chat, mensaje)
         except Exception as e:
             print(f"Error: {e}")
