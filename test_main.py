@@ -22,11 +22,8 @@ def test_check_http_status_failure():
 
 
 import pytest_asyncio
-
-# Test for enviar_mensaje_telegram function
 @pytest_asyncio.fixture
 async def test_enviar_mensaje_telegram():
-    # Using dummy token and chat_id for testing purposes
     token = "6972501031:AAFi8k3AqAU0mjFiFg7CrreH5XPwZPAFabM"
     chat_id = "6424284777"
     mensaje = "Prueba de funcionamiento"
