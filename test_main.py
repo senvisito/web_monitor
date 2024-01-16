@@ -29,4 +29,4 @@ async def test_enviar_mensaje_telegram():
     chat_id = "6424284777"
     mensaje = "Prueba de funcionamiento"
     result = await monitor.enviar_mensaje_telegram(token, chat_id, mensaje)
-    assert result is None
+    assert result == True
