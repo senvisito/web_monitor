@@ -27,9 +27,9 @@ import pytest_asyncio
 @pytest_asyncio.fixture
 async def test_enviar_mensaje_telegram():
     # Using dummy token and chat_id for testing purposes
-    token = "123456789:ABCDEFGHIJKLMNO"
-    chat_id = "123456789"
-    mensaje = "Test message"
+    token = "6972501031:AAFi8k3AqAU0mjFiFg7CrreH5XPwZPAFabM"
+    chat_id = "6424284777"
+    mensaje = "Prueba de funcionamiento"
     result = await monitor.enviar_mensaje_telegram(token, chat_id, mensaje)
     assert result is None
 
