@@ -7,7 +7,6 @@ id_chat = '6424284777'
 URL = "http://scanme.nmap.org/"
 
 async def main():
-    while True:
         try:
             if not monitor.check_port_status(URL):
                 mensaje = "El puerto del servicio web no responde o está cerrado."
@@ -19,7 +18,7 @@ async def main():
             await monitor.enviar_mensaje_telegram(TOKEN_TELEGRAM_BOT, id_chat, mensaje)
         except Exception as e:
             print(f"Error: {e}")
-        await asyncio.sleep(30)  # Esperar 30 segundos antes de volver a comprobar
+        
 
 if __name__ == '__main__':
     asyncio.run(main())
