@@ -2,8 +2,8 @@ import os
 import asyncio
 import monitor
 
-TOKEN_TELEGRAM_BOT = '5812663459:AAGu7j0bN3Bdsxo_DRAbi8danRovSlcvXKk'
-id_chat = '1447357540'
+TOKEN_TELEGRAM_BOT = '6972501031:AAFi8k3AqAU0mjFiFg7CrreH5XPwZPAFabM'
+id_chat = '6424284777'
 URL = "http://scanme.nmap.org/"
 
 async def main():
