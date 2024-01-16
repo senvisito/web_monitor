@@ -19,5 +19,13 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: |
+      run: python test_main.py
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
     - name: Send Results to Telegram
       run: python main.py
+
+
