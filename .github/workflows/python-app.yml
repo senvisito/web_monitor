@@ -22,8 +22,8 @@ jobs:
     - name: |
       run: python test_main.py
       env:
-        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        TOKEN_TELEGRAM_BOT: ${{ secrets.TOKEN_TELEGRAM_BOTN }}
+        id_chat: ${{ secrets.id_chat }}
 
     - name: Send Results to Telegram
       run: python main.py
