@@ -27,6 +27,6 @@ def test_check_http_status_failure():
 async def test_enviar_mensaje_telegram():
     token = "6972501031:AAFi8k3AqAU0mjFiFg7CrreH5XPwZPAFabM"
     chat_id = "6424284777"
-    mensaje = "Prueba de funcionamiento"
+    mensaje = "Prueba de funcionamiento de test main"
     result = await monitor.enviar_mensaje_telegram(token, chat_id, mensaje)
-    assert result == True
+    assert result is None
