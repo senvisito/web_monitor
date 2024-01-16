@@ -44,4 +44,4 @@ async def enviar_mensaje_telegram(token, chat_id, mensaje):
     except Exception as e:
         print(f"Error al enviar mensaje de Telegram: {e}")
 
-    return None  # Devuelve un objeto None al finalizar la función
+    return None 
